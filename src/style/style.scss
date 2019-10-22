@@ -1,0 +1,42 @@
+// VARS
+// for blocks
+$color-light-blue: #15B8F3;
+$color-dark-blue: #0DA1D7;
+$color-blue-footer: #2980CB;
+$color-dark-green: #5DBC03;
+$color-light-green: #5DBC03;
+// For btn
+$color-blue-btn: #297EC9;
+$color-blue-btn-personal: #012F68;
+// For text
+$color-black-text: #212529;
+$color-grey-text: #9C9397;
+$color-blue-text: #1780CB;
+
+/* General */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: $color-black-text;
+}
+.container {
+    outline: 3px solid yellow;
+}
+.row {
+    outline: 2px solid red;
+}
+
+.btn {
+    color: #ffffff;
+    border-radius: 0;
+}
+
+.btn-connect,
+.btn-pay {
+    background-color: $color-blue-btn;
+    border-color: $color-blue-btn;
+}
+
+.btn-person {
+    background-color: $color-blue-btn-personal;
+    border-color: $color-blue-btn-personal;
+}
