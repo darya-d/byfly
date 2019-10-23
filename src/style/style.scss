@@ -2,9 +2,10 @@
 // for blocks
 $color-light-blue: #15B8F3;
 $color-dark-blue: #0DA1D7;
-$color-blue-footer: #2980CB;
 $color-dark-green: #5DBC03;
-$color-light-green: #5DBC03;
+$color-light-green: #66CE04;
+$color-gray-header: #F8F9FA;
+$color-blue-footer: #2980CB;
 // For btn
 $color-blue-btn: #297EC9;
 $color-blue-btn-personal: #012F68;
@@ -15,14 +16,39 @@ $color-blue-text: #1780CB;
 
 /* General */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
+    font-weight: 300;
     color: $color-black-text;
 }
-.container {
-    outline: 3px solid yellow;
+
+.fa {
+    color: #ffffff;
 }
-.row {
-    outline: 2px solid red;
+
+// !HEADER
+.header {
+    background-color: $color-gray-header;
+}
+
+.header .row {
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.tech-help {
+    &__number {
+        color: $color-blue-text;
+        font-size: 36px;
+    }
+}
+
+.fa-phone-square {
+    color: $color-blue-btn;
+    font-size: 24px;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 2px;
 }
 
 .btn {
@@ -39,4 +65,100 @@ body {
 .btn-person {
     background-color: $color-blue-btn-personal;
     border-color: $color-blue-btn-personal;
+}
+.nav-link:hover {
+    color: #fff;
+    opacity: 0.7;
+}
+
+
+// !MAIN
+// *Commercial section
+.commercial {
+    background: url("/src/img/background.jpg") no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.card-header {
+    background-color: $color-light-green;
+    font-size: 24px;
+    font-style: italic;
+    padding: 25px 25px;
+}
+
+.card .tr-numbers {
+    color: $color-blue-text;
+    font-weight: 400;
+    font-size: 32px;
+}
+.commercial__card .card-body {
+    padding: 0;
+    margin: 0 auto;
+}
+
+.commercial__tr td {
+    padding-bottom: 0;
+    margin: 0;
+    text-align: center;
+}
+
+// *Tarrif section
+.nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.tariff .table th {
+    padding-left: 1.5em;
+    position:relative;
+
+    color: #fff;
+}
+
+// .arrow-right {
+// width: 0; 
+// height: 0; 
+// border-top: 20px solid transparent; 
+// border-bottom: 20px solid transparent;
+// border-left: 20px solid green;
+// position: absolute;
+// right:-20px;
+// }
+
+.th__title-blue-l {
+    background-color: $color-light-blue;
+}
+.th__title-blue-d {
+    background-color: $color-dark-blue;
+}
+
+.th__title-green-l {
+    background-color: $color-light-green;
+}
+.th__title-green-d {
+    background-color: $color-dark-green;
+}
+
+.table {
+    margin-bottom: 20px;
+}
+
+.table__title {
+    font-size: 24px;
+}
+
+// !FOOTER
+.footer {
+    background-color: $color-blue-footer;
+
+    &__text {
+        color: #fff;
+    }
+}
+
+.footer .row {
+    padding-top: 15px;
+    padding-bottom: 10px;
 }

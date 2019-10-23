@@ -1,20 +1,262 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Byfly</title>
-    <!-- Normalize -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <!-- Bootstrap 4 styles -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Iconic fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- CSS styles -->
     <link rel="stylesheet" href="./src/style/style.css">
 </head>
 <body>
-    
+    <!-- !HEADER -->
+    <header class="header">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col-lg-3">
+                    <img src="/src/img/logo.png" alt="ByFly logo" width="170" height="95">
+                </div>
+                <div class="col-lg-3 d-flex justify-content-end">
+                    <div class="tech-help">
+                        <div class="tech-help__number"> <i class="fa fa-phone-square"></i> 123</div>
+                        <span class="tech-help__text">cправка и поддержка</span>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-end">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-connect" href="#">Подключить</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-pay" href="#">Оплатить</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-person" href="#">Личный кабинет</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- !MAIN -->
+    <main class="main">
+        <!-- *Commercial section -->
+        <section class="commercial">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="commercial__card">
+                            <div class="card text-white mb-3">
+                                <p class="card-header">byfly от Белтелеком - все виды широкополосного доступа в сеть Интернет</p>
+                                <div class="card-body">
+                                    <table class="table table-borderless">
+                                        <tbody>
+                                            <tr class="commercial__tr">
+                                                <td>Более</td>
+                                                <td>Скорость до</td>
+                                                <td>Более</td>
+                                            </tr>
+                                            <tr class=" commercial__tr tr-numbers">
+                                                <td>2920</td>
+                                                <td>200</td>
+                                                <td>15</td>
+                                            </tr>
+                                            <tr class="commercial__tr">
+                                                <td>тысяч абонентов</td>
+                                                <td>Мбит/сек</td>
+                                                <td>лет с вами</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- *Tarrif section -->
+        <section class="tariff">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <!-- Navs block -->
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-individ" role="tab" aria-controls="nav-individ" aria-selected="true">Физическим лицам</a>
+                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-entity" role="tab" aria-controls="nav-entity" aria-selected="false">Юридическим лицам</a>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <!-- For individuals -->
+                            <div class="tab-pane fade show active" id="nav-individ" role="tabpanel" aria-labelledby="nav-individ-tab">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <p class="table__title">Высокоскоростной нелимитируемый доступ в Интернет (по технологии xPon)</p>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th class="th__title th__title-blue-l" scope="row">Социальный анлим 10</th>
+                                            <td>Прием до 25 Мбит/с</td>
+                                            <td>Передача до 12.5 Мбит/с</td>
+                                            <td>20.00 р/мес</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th__title th__title-blue-d" scope="row">Рекорд 10</th>
+                                            <td>Прием до 10 Мбит/с</td>
+                                            <td>Передача до 5 Мбит/с</td>
+                                            <td>20.00 р/мес</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th__title th__title-blue-l" scope="row">Рекорд 25</th>
+                                            <td>Прием до 25 Мбит/с</td>
+                                            <td>Передача до 12.5 Мбит/с</td>
+                                            <td>20.00 р/мес</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th__title th__title-blue-d" scope="row">Рекорд 50 NEW</th>
+                                            <td>Прием до 50 Мбит/с</td>
+                                            <td>Передача до 25 Мбит/с</td>
+                                            <td>28.45 р/мес</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th__title th__title-blue-l" scope="row">Рекорд 200</th>
+                                            <td>Прием до 200 Мбит/с</td>
+                                            <td>Передача до 100 Мбит/с</td>
+                                            <td>40.50 р/мес</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <p class="table__title">Высокоскоростной нелимитируемый доступ в Интернет (по технологии ADSL)</p>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th class="th__title th__title-green-d" scope="row">Домосед старт</th>
+                                            <td>Прием до 25 Мбит/с</td>
+                                            <td>Передача до 12.5 Мбит/с</td>
+                                            <td>20.00 р/мес</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th__title th__title-green-l" scope="row">Домосед XXL</th>
+                                            <td>Прием до 10 Мбит/с</td>
+                                            <td>Передача до 5 Мбит/с</td>
+                                            <td>20.00 р/мес</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th__title th__title-green-d" scope="row">Супер Домосед</th>
+                                            <td>Прием до 25 Мбит/с</td>
+                                            <td>Передача до 12.5 Мбит/с</td>
+                                            <td>20.00 р/мес</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th__title th__title-green-l" scope="row">Домосед Ультра</th>
+                                            <td>Прием до 50 Мбит/с</td>
+                                            <td>Передача до 25 Мбит/с</td>
+                                            <td>28.45 р/мес</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th__title th__title-green-d" scope="row">Социальный анлим 3</th>
+                                            <td>Прием до 200 Мбит/с</td>
+                                            <td>Передача до 100 Мбит/с</td>
+                                            <td>40.50 р/мес</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <p class="table__title">Высокоскоростной нелимитируемый доступ в Интернет (по технологии xPon)</p>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th class="th__title th__title-blue-l" scope="row">Социальный анлим 10</th>
+                                            <!-- <div class="arrow-right"></div> -->
+                                            <td>Прием до 25 Мбит/с</td>
+                                            <td>Передача до 12.5 Мбит/с</td>
+                                            <td>20.00 р/мес</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th__title th__title-blue-l" scope="row">Рекорд 10</th>
+                                            <td>Прием до 10 Мбит/с</td>
+                                            <td>Передача до 5 Мбит/с</td>
+                                            <td>20.00 р/мес</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th__title th__title-blue-l" scope="row">Рекорд 25</th>
+                                            <td>Прием до 25 Мбит/с</td>
+                                            <td>Передача до 12.5 Мбит/с</td>
+                                            <td>20.00 р/мес</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th__title th__title-blue-l" scope="row">Рекорд 50 NEW</th>
+                                            <td>Прием до 50 Мбит/с</td>
+                                            <td>Передача до 25 Мбит/с</td>
+                                            <td>28.45 р/мес</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th__title th__title-blue-l" scope="row">Рекорд 200</th>
+                                            <td>Прием до 200 Мбит/с</td>
+                                            <td>Передача до 100 Мбит/с</td>
+                                            <td>40.50 р/мес</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- For legal entities -->
+                            <div class="tab-pane fade" id="nav-entity" role="tabpanel" aria-labelledby="nav-entity-tab"> 
+                                ...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- !FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <p class="footer__text">
+                        РУП "Белтелеком", 2019. УНП 101007741
+                    </p>
+                </div>
+
+                <div class="col-lg-7">
+                    <ul class="list d-flex">
+                        <li>
+                            <i class="fa fa-twitter"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-vk"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-instagram"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-facebook"></i>
+                        </li>
+                        <li>
+                            <i class="fa fa-odnoklassniki"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts  -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,15 +1,35 @@
 /* General */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
+  font-weight: 300;
   color: #212529;
 }
 
-.container {
-  outline: 3px solid yellow;
+.fa {
+  color: #ffffff;
 }
 
-.row {
-  outline: 2px solid red;
+.header {
+  background-color: #F8F9FA;
+}
+
+.header .row {
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.tech-help__number {
+  color: #1780CB;
+  font-size: 36px;
+}
+
+.fa-phone-square {
+  color: #297EC9;
+  font-size: 24px;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 2px;
 }
 
 .btn {
@@ -26,5 +46,89 @@ body {
 .btn-person {
   background-color: #012F68;
   border-color: #012F68;
+}
+
+.nav-link:hover {
+  color: #fff;
+  opacity: 0.7;
+}
+
+.commercial {
+  background: url("/src/img/background.jpg") no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.card-header {
+  background-color: #66CE04;
+  font-size: 24px;
+  font-style: italic;
+  padding: 25px 25px;
+}
+
+.card .tr-numbers {
+  color: #1780CB;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.commercial__card .card-body {
+  padding: 0;
+  margin: 0 auto;
+}
+
+.commercial__tr td {
+  padding-bottom: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.tariff .table th {
+  padding-left: 1.5em;
+  position: relative;
+  color: #fff;
+}
+
+.th__title-blue-l {
+  background-color: #15B8F3;
+}
+
+.th__title-blue-d {
+  background-color: #0DA1D7;
+}
+
+.th__title-green-l {
+  background-color: #66CE04;
+}
+
+.th__title-green-d {
+  background-color: #5DBC03;
+}
+
+.table {
+  margin-bottom: 20px;
+}
+
+.table__title {
+  font-size: 24px;
+}
+
+.footer {
+  background-color: #2980CB;
+}
+
+.footer__text {
+  color: #fff;
+}
+
+.footer .row {
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 /*# sourceMappingURL=style.css.map */
