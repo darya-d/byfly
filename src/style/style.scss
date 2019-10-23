@@ -67,10 +67,13 @@ body {
     border-color: $color-blue-btn-personal;
 }
 
+.header .nav {
+    justify-content: flex-end;
+}
+
 .nav-item .nav-link {
     border-radius: 0;
 }
-
 
 .nav-item:not(:last-child) {
     margin-right: 1px;
@@ -191,13 +194,30 @@ body {
 .footer {
     background-color: $color-blue-footer;
 
-    &__text {
+    .copyright {
         color: #fff;
+    }
+
+    .fa {
+        font-size: 24px;
     }
 }
 
-.footer .row {
-    padding-top: 15px;
+.social-icon__list {
+    justify-content: flex-end;
+}
+
+.social-icon__list li {
+    margin-right: 30px;
+    list-style-type: none;
+}
+
+.social-icon__link:hover {
+    opacity: 0.7;
+}
+
+.footer {
+    padding-top: 25px;
     padding-bottom: 10px;
 }
 
@@ -207,6 +227,12 @@ body {
     // Header
     .header .nav {
         margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .nav-link {
+        margin-bottom: 2px;
+        width: 100%;
     }
 
     .nav-link .btn-connect,
@@ -222,8 +248,20 @@ body {
 
     .commercial__card {
         display: block;
-        width: 600px;
+        width: 550px;
         margin: 0 auto;
+    }
+
+    //Footer
+    .footer {
+        .copyright {
+            text-align: center;
+        }
+        
+        .social-icon__list {
+            justify-content: space-around;
+            margin: 0 auto;
+        }
     }
 
 }
@@ -232,11 +270,6 @@ body {
 @media (max-width: 767.98px) {
     .header .nav {
         margin: 0 auto;
-    }
-
-    .nav-link {
-        margin-bottom: 2px;
-        width: 100%;
     }
 
     // Commercial
@@ -289,6 +322,7 @@ body {
     .tech-help {
         display: block;
         margin: 0 auto;
+        margin-bottom: 10px;
 
         text-align: center;
     }
