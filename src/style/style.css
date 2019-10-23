@@ -35,10 +35,6 @@ body {
   margin-right: -7px;
 }
 
-.nav-item:not(:last-child) {
-  margin-right: 2px;
-}
-
 .btn {
   color: #ffffff;
   border-radius: 0;
@@ -59,6 +55,10 @@ body {
   border-radius: 0;
 }
 
+.nav-item:not(:last-child) {
+  margin-right: 1px;
+}
+
 .nav-link:hover {
   color: #fff;
   opacity: 0.7;
@@ -67,8 +67,8 @@ body {
 .commercial {
   background: url("/src/img/background.jpg") no-repeat;
   background-size: cover;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 .card-header {
@@ -102,8 +102,16 @@ body {
 }
 
 .nav {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tariff {
+  padding-top: 50px;
+}
+
+.tariff__title {
+  text-align: center;
 }
 
 .tariff .table th {
@@ -128,8 +136,30 @@ body {
   background-color: #5DBC03;
 }
 
-.table {
+.tariff .table {
   margin-bottom: 20px;
+}
+
+.tariff .table th {
+  font-size: 18px;
+  vertical-align: middle;
+  font-weight: 300;
+}
+
+.tariff .table td {
+  font-size: 12px;
+  vertical-align: middle;
+  color: #9C9397;
+}
+
+.tariff .table td .table__number {
+  font-size: 21px;
+  color: #212529;
+}
+
+.tariff .table td .table__number-price {
+  font-size: 26px;
+  color: #1780CB;
 }
 
 .table__title {
@@ -157,6 +187,10 @@ body {
   .nav-link .btn-pay {
     width: 100px;
   }
+  .commercial {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
   .commercial__card {
     display: block;
     width: 600px;
@@ -172,8 +206,27 @@ body {
     margin-bottom: 2px;
     width: 100%;
   }
+  .commercial {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
   .commercial__card {
     width: 430px;
+  }
+  .commercial .card-header {
+    font-size: 18px;
+  }
+  .commercial .card-body {
+    font-size: 12px;
+  }
+  .commercial .card .tr-numbers {
+    font-size: 24px;
+  }
+  .tariff__title {
+    font-size: 24px;
+  }
+  .tariff .table__title {
+    font-size: 21px;
   }
 }
 
