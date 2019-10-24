@@ -38,22 +38,36 @@ body {
 .tech-help {
     text-align: right;
     padding-top: 5px;
+    
     &__number {
         color: $color-blue-text;
         font-size: 38px;
         margin-bottom: -10px;
     }
+
+    .fa-phone-square {
+        color: $color-blue-btn;
+        font-size: 24px;
+        margin-right: -7px;
+    }
 }
 
-.fa-phone-square {
-    color: $color-blue-btn;
-    font-size: 24px;
-    margin-right: -7px;
+.header .nav {
+    justify-content: flex-end;
 }
 
-.nav-link {
+.nav-item:not(:last-child) {
+    margin-right: 1px;
+}
+
+.nav-item .nav-link {
     color: #ffffff;
     border-radius: 0;
+
+    &:hover {
+        color: #fff;
+        opacity: 0.7;
+    }
 }
 
 .nav-link--connect,
@@ -67,38 +81,23 @@ body {
     border-color: $color-blue-btn-personal;
 }
 
-.header .nav {
-    justify-content: flex-end;
-}
-
-.nav-item .nav-link {
-    border-radius: 0;
-}
-
-.nav-item:not(:last-child) {
-    margin-right: 1px;
-}
-
-.nav-link:hover {
-    color: #fff;
-    opacity: 0.7;
-}
-
-
 // !MAIN
 // *Commercial section
 .commercial {
-    background: url("../img/background.png") no-repeat;
-    background-size: cover;
     padding-top: 150px;
     padding-bottom: 250px;
+
+    background: url("../img/background.png") no-repeat;
+    background-size: cover;
 }
 
 .card-header {
-    background-color: $color-light-green;
+    padding: 25px 25px;
+
     font-size: 24px;
     font-style: italic;
-    padding: 25px 25px;
+
+    background-color: $color-light-green;
 }
 
 .commercial__card {
@@ -112,9 +111,10 @@ body {
 }
 
 .card .tr-numbers {
-    color: $color-blue-text;
     font-weight: 400;
     font-size: 32px;
+
+        color: $color-blue-text;
 }
 .commercial__card .card-body {
     padding: 0;
@@ -124,6 +124,7 @@ body {
 .commercial__tr td {
     padding-bottom: 0;
     margin: 0;
+    
     text-align: center;
 }
 
@@ -132,8 +133,8 @@ body {
     padding-top: 50px;
 
     .nav-tabs .nav-link:hover {
-        color: $color-black-text;
         opacity: 1;
+        color: $color-black-text;
     }
 }
 .tariff__title {
@@ -147,74 +148,42 @@ body {
 
 .tariff .table th {
     padding-left: 1.5em;
-    position: relative;
     max-width: 190px;
 
-    color: #fff;
     position: relative;
+
+    color: #ffffff;
 }
 
+.th__title i {
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+    right: -20px;
+    width: 20px;
+    
+	clip-path: polygon(0 0, 0 100%, 100% 50%);
+    transition: all 1s ease-in-out;
+}
+
+.th__title-blue-l,
 .th__title-blue-l i {
-	width: 20px;
-	background-color: $color-light-blue;
-	display: block;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: -20px;
-	clip-path: polygon(0 0, 0 100%, 100% 50%);
-	transition: all 1s ease-in-out;
-}
-
-.th__title-blue-d i {
-	width: 20px;
-	background-color: $color-dark-blue;
-	display: block;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: -20px;
-	clip-path: polygon(0 0, 0 100%, 100% 50%);
-	transition: all 1s ease-in-out;
-}
-
-.th__title-green-d i {
-    width: 20px;
-	background-color: $color-dark-green;
-	display: block;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: -20px;
-	clip-path: polygon(0 0, 0 100%, 100% 50%);
-	transition: all 1s ease-in-out;
-}
-
-.th__title-green-l i {
-    width: 20px;
-	background-color: $color-light-green;
-	display: block;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: -20px;
-	clip-path: polygon(0 0, 0 100%, 100% 50%);
-	transition: all 1s ease-in-out;
-}
-
-
-.th__title-blue-l {
     background-color: $color-light-blue;
 }
-.th__title-blue-d {
+.th__title-blue-d,
+.th__title-blue-d i {
     background-color: $color-dark-blue;
 }
 
-.th__title-green-l {
-    background-color: $color-light-green;
+.th__title-green-d,
+.th__title-green-d i {
+	background-color: $color-dark-green;
 }
-.th__title-green-d {
-    background-color: $color-dark-green;
+
+.th__title-green-l,
+.th__title-green-l i {
+	background-color: $color-light-green;
 }
 
 .tariff .table {
@@ -222,8 +191,8 @@ body {
 
     th {
         font-size: 18px;
-        vertical-align: middle;
         font-weight: 300;
+        vertical-align: middle;
     }
     
     td {
@@ -236,11 +205,13 @@ body {
 
     td .table__number {
         font-size: 21px;
+
         color: $color-black-text;
     }
 
     td .table__number-price {
         font-size: 26px;
+
         color: $color-blue-text;
     }
 }
@@ -251,10 +222,14 @@ body {
 
 // !FOOTER
 .footer {
+    padding-top: 25px;
+    padding-bottom: 10px;
+
     background-color: $color-blue-footer;
 
     .copyright {
-        color: #fff;
+        font-size: 14px;
+        color: #ffffff;
     }
 
     .fa {
@@ -275,10 +250,6 @@ body {
     opacity: 0.7;
 }
 
-.footer {
-    padding-top: 25px;
-    padding-bottom: 10px;
-}
 
 // !Media queries
 @media screen and (min-width: 1585px) {
@@ -298,17 +269,13 @@ body {
     .nav-link {
         margin-bottom: 2px;
         width: 100%;
+
         text-align: center;
     }
 
     // Commercial
     .commercial {
         background: url("../img/background.jpg") no-repeat;
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    .commercial {
         background-size: cover;
         padding-top: 150px;
         padding-bottom: 190px;
@@ -325,6 +292,10 @@ body {
         border: 1px solid #DEE2E6;
     }
 
+    .tariff .table .th__title {
+        font-size: 16px;
+    }
+    
     //Footer
     .footer {
         .copyright {
@@ -340,6 +311,7 @@ body {
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
+    // Header
     .header .nav {
         margin: 0 auto;
     }
@@ -348,9 +320,10 @@ body {
     .commercial {
         padding-top: 50px;
         padding-bottom: 50px;
+        width: 100%;
 
         &__card {
-            width: 430px;
+            width: 100%;
         }
 
         .card-header {
@@ -380,6 +353,7 @@ body {
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
+    // Header
     .header .nav {
         display: block;
         margin: 0 auto;
@@ -404,6 +378,6 @@ body {
 
     // Commercial
     .commercial__card {
-        width: 330px;
+        width: 100%;
     }
 }
