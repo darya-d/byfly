@@ -71,7 +71,7 @@ body {
 }
 
 .commercial {
-  background: url("/src/img/background.png") no-repeat;
+  background: url("../img/background.png") no-repeat;
   background-size: cover;
   padding-top: 150px;
   padding-bottom: 250px;
@@ -274,7 +274,7 @@ body {
 
 @media screen and (min-width: 1585px) {
   .commercial {
-    background: url("/src/img/background_big.png") no-repeat;
+    background: url("../img/background_big.png") no-repeat;
   }
 }
 
@@ -292,7 +292,7 @@ body {
     text-align: center;
   }
   .commercial {
-    background: url("/src/img/background.jpg") no-repeat;
+    background: url("../img/background.jpg") no-repeat;
     padding-top: 50px;
     padding-bottom: 50px;
   }
