@@ -94,12 +94,14 @@
                         <!-- Navs block -->
                         <nav>
                             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-individ" role="tab" aria-controls="nav-individ" aria-selected="true">Физическим лицам</a>
-                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-entity" role="tab" aria-controls="nav-entity" aria-selected="false">Юридическим лицам</a>
+                                <!-- For individuals tab -->
+                                <a class="nav-item nav-link active" id="nav-individ-tab" data-toggle="tab" href="#nav-individ" role="tab" aria-controls="nav-individ" aria-selected="true">Физическим лицам</a>
+                                <!-- For entities tab -->
+                                <a class="nav-item nav-link" id="nav-entity-tab" data-toggle="tab" href="#nav-entity" role="tab" aria-controls="nav-entity" aria-selected="false">Юридическим лицам</a>
                             </div>
                         </nav>
                         <div class="tab-content" id="nav-tabContent">
-                            <!-- For individuals -->
+                            <!-- For individuals info -->
                             <div class="tab-pane fade show active" id="nav-individ" role="tabpanel" aria-labelledby="nav-individ-tab">
                                 <table class="table table-hover">
                                     <thead>
@@ -215,8 +217,118 @@
                             </div>
 
                             <!-- For legal entities -->
-                            <div class="tab-pane fade" id="nav-entity" role="tabpanel" aria-labelledby="nav-entity-tab"> 
-                                ...
+                            <div class="tab-pane fade show" id="nav-entity" role="tabpanel" aria-labelledby="nav-entity-tab"> 
+                                <table class="table table-hover">
+                                    <thead>
+                                        <p class="table__title">Высокоскоростной нелимитируемый доступ в Интернет (по технологии xPon)</p>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th class="th__title th__title-blue-l" scope="row">Социальный анлим 25</th>
+                                            <td>Прием до<span class="table__number"> 25 </span>Мбит/с</td>
+                                            <td>Передача до<span class="table__number"> 12.5</span> Мбит/с</td>
+                                            <td><span class="table__number-price">11.<sup>96</sup></span> р./мес.</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th__title th__title-blue-d" scope="row">Бизнес-комплект 20</th>
+                                            <td>Прием до<span class="table__number"> 20 </span> Мбит/с</td>
+                                            <td>Передача до<span class="table__number"> 20 </span>Мбит/с</td>
+                                            <td><span class="table__number-price">28.<sup>80</sup> </span>р./мес.</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th__title th__title-blue-l" scope="row">Бизнес-комплект 60</th>
+                                            <td>Прием до<span class="table__number"> 60 </span>Мбит/с</td>
+                                            <td>Передача до<span class="table__number"> 30 </span>Мбит/с</td>
+                                            <td><span class="table__number-price"> 57.<sup>60</sup> </span>р./мес.</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th__title th__title-blue-d" scope="row">Бизнес-комплект 80</th>
+                                            <td>Прием до<span class="table__number"> 80 </span> Мбит/с</td>
+                                            <td>Передача до<span class="table__number"> 40 </span> Мбит/с</td>
+                                            <td><span class="table__number-price"> 68.<sup>00</sup> </span>р./мес.</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th__title th__title-blue-l" scope="row">Бизнес-комплект 200</th>
+                                            <td>Прием до<span class="table__number"> 200 </span>Мбит/с</td>
+                                            <td>Передача до<span class="table__number"> 200 </span>Мбит/с</td>
+                                            <td><span class="table__number-price">136.<sup>50</sup> </span>р./мес.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <p class="table__title">Высокоскоростной нелимитируемый доступ в Интернет (по технологии ADSL)</p>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th class="th__title th__title-green-d" scope="row">Школьный стандарт</th>
+                                            <td>Прием до<span class="table__number"> 3072 </span>Кбит/с</td>
+                                            <td>Передача до<span class="table__number"> 512 </span>Кбит/с</td>
+                                            <td><span class="table__number-price"> 9.<sup>20</sup> </span>р./мес.</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th__title th__title-green-l" scope="row">Одно окно</th>
+                                            <td>Прием до<span class="table__number"> 128 </span>Кбит/с</td>
+                                            <td>Передача до<span class="table__number"> 128 </span>Кбит/с</td>
+                                            <td><span class="table__number-price">2.<sup>52</sup> </span>р./мес.</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th__title th__title-green-d" scope="row">Клуб 14</th>
+                                            <td>Прием до<span class="table__number"> 2048 </span>Кбит/с</td>
+                                            <td>Передача до<span class="table__number"> 512 </span>Кбит/с</td>
+                                            <td><span class="table__number-price"> 28.<sup>40</sup></span>р./мес.</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th__title th__title-green-l" scope="row">Школьный макси</th>
+                                            <td>Прием до<span class="table__number"> 6144 </span>Кбит/с</td>
+                                            <td>Передача до<span class="table__number"> 512 </span>Кбит/с</td>
+                                            <td><span class="table__number-price"> 12.<sup>40</sup> </span>р./мес.</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th__title th__title-green-d" scope="row">Социальный анлим 3</th>
+                                            <td>Прием до<span class="table__number"> 200 </span>Мбит/с</td>
+                                            <td>Передача до<span class="table__number"> 100 </span>Мбит/с</td>
+                                            <td><span class="table__number-price">40.<sup>50</sup> </span>р./мес.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-hover">
+                                    <thead>
+                                        <p class="table__title">Высокоскоростной нелимитируемый доступ в Интернет (по технологии xPon)</p>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th class="th__title th__title-blue-l" scope="row">Домосед старт</th>
+                                            <td>Прием до<span class="table__number"> 25 </span>Мбит/с</td>
+                                            <td>Передача до<span class="table__number"> 12.5 </span>Мбит/с</td>
+                                            <td><span class="table__number-price"> 20.<sup>00</sup> </span>р./мес.</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th__title th__title-blue-l" scope="row">Домосед XXL</th>
+                                            <td>Прием до<span class="table__number"> 10 </span> Мбит/с</td>
+                                            <td>Передача до<span class="table__number"> 5 </span>Мбит/с</td>
+                                            <td><span class="table__number-price">20.<sup>00</sup> </span>р./мес.</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th__title th__title-blue-l" scope="row">СуперДомосед</th>
+                                            <td>Прием до<span class="table__number"> 25 </span>Мбит/с</td>
+                                            <td>Передача до<span class="table__number"> 12.5 </span>Мбит/с</td>
+                                            <td><span class="table__number-price"> 20.<sup>00</sup> </span>р./мес.</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th__title th__title-blue-l" scope="row">Домосед Ультра</th>
+                                            <td>Прием до<span class="table__number"> 50 </span> Мбит/с</td>
+                                            <td>Передача до<span class="table__number"> 25 </span> Мбит/с</td>
+                                            <td><span class="table__number-price"> 28.<sup>45</sup> </span>р./мес.</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="th__title th__title-blue-l" scope="row">Домосед Премиум</th>
+                                            <td>Прием до<span class="table__number"> 200 </span>Мбит/с</td>
+                                            <td>Передача до<span class="table__number"> 100 </span>Мбит/с</td>
+                                            <td><span class="table__number-price">40.<sup>50</sup> </span>р./мес.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -269,6 +381,9 @@
     </footer>
 
     <!-- Scripts  -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>

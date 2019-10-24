@@ -88,10 +88,10 @@ body {
 // !MAIN
 // *Commercial section
 .commercial {
-    background: url("/src/img/background.jpg") no-repeat;
+    background: url("/src/img/background.png") no-repeat;
     background-size: cover;
     padding-top: 150px;
-    padding-bottom: 150px;
+    padding-bottom: 250px;
 }
 
 .card-header {
@@ -107,6 +107,9 @@ body {
     margin-right: 0;
 }
 
+.card {
+    border: none;
+}
 
 .card .tr-numbers {
     color: $color-blue-text;
@@ -125,17 +128,22 @@ body {
 }
 
 // *Tarrif section
-.nav {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 .tariff {
     padding-top: 50px;
+
+    .nav-tabs .nav-link:hover {
+        color: $color-black-text;
+        opacity: 1;
+    }
 }
 .tariff__title {
 
     text-align: center;
+}
+
+.nav {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .tariff .table th {
@@ -222,6 +230,12 @@ body {
 }
 
 // !Media queries
+@media screen and (min-width: 1585px) {
+    .commercial {
+        background: url("/src/img/background_big.png") no-repeat;
+    }
+}
+
 // Medium devices (tablets, less than 992px)
 @media screen and (max-width: 991.98px) {
     // Header
@@ -242,8 +256,16 @@ body {
 
     // Commercial
     .commercial {
-        padding-top: 100px;
-        padding-bottom: 100px;
+        background: url("/src/img/background.jpg") no-repeat;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .commercial {
+        
+        background-size: cover;
+        padding-top: 150px;
+        padding-bottom: 190px;
     }
 
     .commercial__card {
