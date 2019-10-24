@@ -51,18 +51,18 @@ body {
     margin-right: -7px;
 }
 
-.btn {
+.nav-link {
     color: #ffffff;
     border-radius: 0;
 }
 
-.btn-connect,
-.btn-pay {
+.nav-link--connect,
+.nav-link--pay {
     background-color: $color-blue-btn;
     border-color: $color-blue-btn;
 }
 
-.btn-person {
+.nav-link--person {
     background-color: $color-blue-btn-personal;
     border-color: $color-blue-btn-personal;
 }
@@ -298,11 +298,7 @@ body {
     .nav-link {
         margin-bottom: 2px;
         width: 100%;
-    }
-
-    .nav-link .btn-connect,
-    .nav-link .btn-pay {
-        width: 100px;
+        text-align: center;
     }
 
     // Commercial
@@ -313,7 +309,6 @@ body {
     }
 
     .commercial {
-        
         background-size: cover;
         padding-top: 150px;
         padding-bottom: 190px;
@@ -390,7 +385,7 @@ body {
         margin: 0 auto;
     }
 
-    .header__logo {
+    .header-logo {
         display: block;
         margin: 0 auto;
     }

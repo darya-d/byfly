@@ -35,18 +35,18 @@ body {
   margin-right: -7px;
 }
 
-.btn {
+.nav-link {
   color: #ffffff;
   border-radius: 0;
 }
 
-.btn-connect,
-.btn-pay {
+.nav-link--connect,
+.nav-link--pay {
   background-color: #297EC9;
   border-color: #297EC9;
 }
 
-.btn-person {
+.nav-link--person {
   background-color: #012F68;
   border-color: #012F68;
 }
@@ -289,10 +289,7 @@ body {
   .nav-link {
     margin-bottom: 2px;
     width: 100%;
-  }
-  .nav-link .btn-connect,
-  .nav-link .btn-pay {
-    width: 100px;
+    text-align: center;
   }
   .commercial {
     background: url("/src/img/background.jpg") no-repeat;
@@ -355,7 +352,7 @@ body {
     display: block;
     margin: 0 auto;
   }
-  .header__logo {
+  .header-logo {
     display: block;
     margin: 0 auto;
   }
