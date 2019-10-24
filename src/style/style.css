@@ -132,7 +132,65 @@ body {
 .tariff .table th {
   padding-left: 1.5em;
   position: relative;
+  max-width: 190px;
   color: #fff;
+  position: relative;
+}
+
+.th__title-blue-l i {
+  width: 20px;
+  background-color: #15B8F3;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -20px;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 50%);
+          clip-path: polygon(0 0, 0 100%, 100% 50%);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.th__title-blue-d i {
+  width: 20px;
+  background-color: #0DA1D7;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -20px;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 50%);
+          clip-path: polygon(0 0, 0 100%, 100% 50%);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.th__title-green-d i {
+  width: 20px;
+  background-color: #5DBC03;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -20px;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 50%);
+          clip-path: polygon(0 0, 0 100%, 100% 50%);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.th__title-green-l i {
+  width: 20px;
+  background-color: #66CE04;
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -20px;
+  -webkit-clip-path: polygon(0 0, 0 100%, 100% 50%);
+          clip-path: polygon(0 0, 0 100%, 100% 50%);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .th__title-blue-l {
@@ -164,6 +222,7 @@ body {
 .tariff .table td {
   font-size: 12px;
   vertical-align: middle;
+  text-align: center;
   color: #9C9397;
 }
 
@@ -249,6 +308,9 @@ body {
     display: block;
     width: 550px;
     margin: 0 auto;
+  }
+  .nav-tabs .nav-link {
+    border: 1px solid #DEE2E6;
   }
   .footer .copyright {
     text-align: center;
