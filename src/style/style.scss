@@ -21,6 +21,20 @@ body {
     color: $color-black-text;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+  
+    white-space: nowrap;
+    border: 0;
+    clip-path: inset(100%);
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+  }
+
 .fa {
     color: #ffffff;
 }
@@ -39,10 +53,14 @@ body {
     text-align: right;
     padding-top: 5px;
     
-    &__number {
+    &__number-call {
         color: $color-blue-text;
         font-size: 38px;
         margin-bottom: -10px;
+    }
+
+    &__number-call:hover {
+        text-decoration: none;
     }
 
     .fa-phone-square {

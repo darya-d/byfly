@@ -5,6 +5,20 @@ body {
   color: #212529;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
+  border: 0;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
 .fa {
   color: #ffffff;
 }
@@ -23,10 +37,14 @@ body {
   padding-top: 5px;
 }
 
-.tech-help__number {
+.tech-help__number-call {
   color: #1780CB;
   font-size: 38px;
   margin-bottom: -10px;
+}
+
+.tech-help__number-call:hover {
+  text-decoration: none;
 }
 
 .tech-help .fa-phone-square {
