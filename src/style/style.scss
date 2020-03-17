@@ -113,15 +113,6 @@ body {
     background-size: cover;
 }
 
-.card-header {
-    padding: 25px 25px;
-
-    font-size: 24px;
-    font-style: italic;
-
-    background-color: $color-light-green;
-}
-
 .commercial__card {
     width: 560px;
     margin: 0 auto;
@@ -189,10 +180,6 @@ body {
     transition: all 1s ease-in-out;
 }
 
-.th__title-blue-l,
-.th__title-blue-l i {
-    background-color: $color-light-blue;
-}
 .th__title-blue-d,
 .th__title-blue-d i {
     background-color: $color-dark-blue;
